@@ -1,0 +1,139 @@
+body{
+	margin:0;
+	padding:0;
+	background-color: #ffffe6;
+}
+/*nav section*/
+.navbar{
+	background-color: #7c1423;
+}
+.navbar-brand,.nav-link{
+	color:#fff;
+	margin-right: 1em !important;
+}
+.navbar-brand:hover,.nav-link:hover{
+	color:#fff;	
+}
+.navbar-collapse{
+	justify-content: flex-end;
+}
+
+/*header section*/
+.header{
+background:url("../images/pexels-pixabay-417054 (1).jpg");
+background-size: cover;
+background-position: center;
+position: relative;
+
+}
+h5{
+	/*position: relative;
+	top: 40%;
+
+	font-size: 2em;
+	margin-right: 60%;*/
+	/*line-height: 500px;*/
+	/*text-align: center;
+	color:white;*/
+}
+.overlay{
+	min-width: 100%;
+	min-height: 100%;
+	background: #000;
+	opacity: .3;
+	position: absolute;
+	top:0;
+	left:0;
+}
+.description{
+text-shadow: 3px 3px 9px black;
+	text-align:center;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+.description h5{
+	font-size:2em;
+	color:white;
+}
+.description p{
+	color:white;
+	font-size:1.3rem;
+	line-height: 2rem;
+	margin-top: 20px;
+}
+.description button{
+	border:1px solid #fff;
+	background:#7c1423;
+	color:#fff;
+	transition: all 0.2s ease-in-out;
+}
+.description button:hover{
+	font-size:1.5em;
+	border:1px solid #fff;
+	background:rgb(128,0,0);
+	/*color:#fff; */
+	color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgb(0,255,0,.4);
+}
+
+/*features section*/
+.features img{
+	box-shadow: 2px 2px 2px #ccc;
+}
+.features.form-control,
+.features input{
+	border-radius: 0;
+}
+.features input[type="submit"]{
+	color:#fff;
+	background:#7c1423;
+
+	/*border:1px solid #fff;
+	background:#7c1423;
+	color:#fff;
+	transition: all 0.2s ease-in-out;*/
+}
+.features input[type="submit"]:hover{
+	background-color: #fff;
+	color:#7c1423;
+	border:1px solid #7c1423;
+
+/*	font-size:1.5em;
+	border:1px solid #fff;
+	background:rgb(128,0,0);*/
+	/*color:#fff; */
+/*	color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgb(0,255,0,.4);*/
+}
+@media(max-width: 576px){
+	.description{
+		transform: none;
+		position: absolute;
+		top:10%;
+		left:0;
+		padding:0 15px;		
+	}
+	.description h1{
+		font-size:2em;
+	}
+	.description p{
+		font-size:1.1em;
+	}
+}
+
+html {
+		overflow: scroll;
+		overflow-x: hidden;
+}
+::-webkit-scrollbar {
+		width: 0px; 
+/* remove scrollbar space 
+/background: transparent; 
+/ optional: just make scrollbar invisible /}
+/ optional: show position indicator in red */
+
+::-webkit-scrollbar-thumb {
+		background: #FF0000;
+}
